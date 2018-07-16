@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <MyModule_FirstModule>
+            <version>0.1.0</version>
+        </MyModule_FirstModule>
+    </modules>
+    <frontend>
+        <routers>
+            <firstmodule>
+                <use>standard</use>
+                <args>
+                    <module>MyModule_FirstModule</module> 
+                    <frontName>helloworld</frontName> 
+                </args>
+            </firstmodule>
+        </routers>
+        <layout>
+            <updates>
+                <firstmodule>
+                    <file>firstmodule.xml</file>
+                </firstmodule>
+            </updates>
+        </layout>
+    </frontend>
+    <global>
+        <blocks>
+            <firstmodule>
+                <class>MyModule_FirstModule_Block</class>
+            </firstmodule>
+        </blocks>
+        <models>
+        </models>
+    </global>
+</config>
