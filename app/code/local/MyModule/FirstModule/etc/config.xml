@@ -30,6 +30,18 @@
             </firstmodule>
         </blocks>
         <models>
+            <firstmodule>
+                <class>MyModule_FirstModule_Block</class>
+                <resourceModel>firstmodule_resource</resourceModel>
+            </firstmodule>
+            <firstmodule_resource>
+                <class>MyModule_FirstModule_Model_Resource</class>
+                <entities>
+                    <contact>
+                        <table>ai_contact</table>
+                    </contact>
+                </entities>
+            </firstmodule_resource>
         </models>
     </global>
 </config>

@@ -2,8 +2,8 @@
 
 class MyModule_FirstModule_Block_View extends Mage_Core_Block_Template
 {
-    public function _toHtml()
+    public function getRequestedRecord()
     {
-        return "Hello World!";
+        return Mage::getModel('firstmodule/contact')->load(1);
     }
 }
