@@ -43,5 +43,21 @@
                 </entities>
             </firstmodule_resource>
         </models>
+        <helpers>
+            <firstmodule>
+                <class>MyModule_FirstModule_Helper</class>
+            </firstmodule>
+        </helpers>
     </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <my_firstmodul before="Mage_Adminhtml">MyModule_FirstModule_Adminhtml</my_firstmodul>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
 </config>
