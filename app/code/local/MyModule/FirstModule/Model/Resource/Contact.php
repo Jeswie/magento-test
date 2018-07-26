@@ -8,6 +8,6 @@ class MyModule_FirstModule_Model_Resource_Contact extends Mage_Core_Model_Resour
 	
 	public function _construct()
 	{
-		$this->_init('firstmodule/contact', 'request_id');
+		$this->_init('firstmodule/contact');
 	}
 }

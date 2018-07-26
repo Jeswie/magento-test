@@ -1,0 +1,25 @@
+<?php
+
+/*
+ * @var MyModule_FirstModule_Block_View $this
+ */
+
+$contactData = $this->getRequestedRecord()->getData();
+
+
+foreach ($contactData as $data) {
+    echo "<ul>   
+            <li>".$data['name']." said: </li>
+            <li>".$data['comment']."</li>
+          </ul></br>";
+    if ($data['request_id']=='1')
+    {
+        echo "Other comments: <br><br>";
+    }
+}
+
+
+/*
+ *  <li><?= $this->getRequestedRecord()->getName() ?>/li>
+    <li><?= $this->getRequestedRecord()->getContact() ?></li>
+ */
